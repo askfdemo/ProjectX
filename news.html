@@ -1,0 +1,932 @@
+<!DOCTYPE HTML>
+
+<html lang="en-us">
+   <head>
+      <!-- ===============================================
+         Title and Meta Tags
+         ================================================ -->
+      <meta charset="utf-8">
+          <title>Forhyre</title>
+   
+      <meta property="og:title" content="Q/A Forum - Forhyre" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="forhyre.com" />
+      <meta property="og:image" content="https://media.licdn.com/media/AAEAAQAAAAAAAAdoAAAAJGQwZjcxMzY1LTgwNGItNDEyNy04NzFjLTM0MDY3MWQ5YWEyYw.png" />
+      <meta property="og:description" 
+  content="SAsk questions,update yourself with latest news and polls." />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- ===============================================
+         CSS
+         ================================================ -->
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/bootstrap.min.css">
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/font-awesome.min.css">
+      <link type="text/css" id="main" href="statics/styles/css/paper.css" rel="stylesheet">
+      <link id="accent-scheme" type="text/css" href="statics/styles/css/paper-blue.css" rel="stylesheet">
+      <link type="text/css" href="statics/styles/css/customizer.css" rel="stylesheet">
+      <link type="text/css" href="statics/styles/css/responsive.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <style type="text/css">
+
+     </style>
+      <!-- ============================================ -->
+   </head>
+   <body data-spy="scroll" data-target=".nav-primary" data-offset="50">
+
+
+
+      <!-- ===============================================
+         CUSTOMIZER - END
+         ================================================ -->
+
+
+      <!-- ===============================================
+         NAVBAR
+         ================================================ -->
+      <!-- Navbar Hide Check -->
+
+      <!-- 
+      If title="true" then the top navbar strip (containing the logo) will hide as soon as user scrolls down.
+      If title="false" then the top navbar will remain in place. By default, this is "true" for Layout#1 and "false" for Layout#2
+       -->
+
+      <div class="navbar-check hidden" title="true"></div>
+      <!-- == -->
+      <div class="nav-intro-strip">
+         <div class="container">
+       
+           <div class="nav-logo">
+               <a href="index.html"><img src="statics/images/Forhyre.jpg" height="35" alt="paper symbol">
+                </div>
+         <div class="icons">
+         <i class="glyphicon glyphicon-search"></i>
+         <i class="glyphicon glyphicon-bell"></i>
+         <i class="glyphicon glyphicon-user"></i>
+         
+         </div>
+         </div>
+      </div>
+      <div class="nav-primary">
+         <div class="container">
+            <ul>
+               <li ><a href="index_layout1.html">Q/A's</a></li>
+               <li class="active"><a href="news.html">Top News</a></li>
+               <li class="s-child"><a href="single_layout1.html">Polls</a></li>
+               <li class="not-important hidden-xs"><a href="#">Terms</a></li>
+               <li class="not-important hidden-xs"><a href="#">Bookmarks</a></li>
+               <li class="not-important hidden-xs"><a href="#">Dashboard</a></li>
+              
+            </ul>
+         </div>
+      </div>
+      <!-- ===============================================
+         NAVBAR - END
+         ================================================ -->
+
+      <!-- ===============================================
+         BACK TO TOP 
+         ================================================ -->
+      <div class="back-to-top">
+         <i class="fa fa-angle-up"></i>
+      </div>
+     <!-- ===============================================
+         BACK TO TOP - END
+         ================================================ -->
+
+
+         <!-- ===============================================
+         PRELOADER
+         ================================================ -->
+         <div class="preloader">
+            <div class="progress progress-striped active">
+              <div class="progress-bar"></div>
+            </div>
+         </div>
+         <!-- ===============================================
+         PRELOADER - END
+         ================================================ -->
+
+      <div id="wrapper">
+         
+
+
+         <!-- ===============================================
+         COVER
+         ================================================ -->
+         <div id="cover-home">
+            <div class="container">
+               <div class="tag-holder">
+                  <p>You are very important.<br>Your opinion actually matters</p>
+                  <a id="question" class="btn btn-paper">Post a Link</a>
+               </div>
+            </div>
+         </div>
+         <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Leo Harsha
+              </span>
+              <span class="light-grey">
+                asks
+              </span>
+                <form>
+        <div class="form-group">
+          <textarea class="form-control status-box" rows="2" placeholder="What's your question?"></textarea>
+        </div>
+      </form>
+            <div class="button-group pull-right">
+        <a href="#" class="btn btn-default">Cancel </a>
+        <a href="#" id="post" class="btn btn-primary">Post</a>
+      </div>  
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("question");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+         <!-- ===============================================
+         COVER - END
+         ================================================ -->
+
+
+         <!-- ===============================================
+         BODY CONTENT
+         ================================================ -->
+         <div id="body-content">
+            <div class="container">
+               <div class="col-md-8 col-sm-7 body-col-left">
+                  <div class="posts">
+                   <div class="feed-switcher">
+          <ul class="list-contents">
+            <li class="feed-tab" id="feed-tab-1">
+              Top
+            </li>
+            <li class="feed-tab" id="feed-tab-2">
+              Most Recent
+            </li>
+            <li class="feed-tab" id="feed-tab-2">
+              Interesting
+            </li>
+            <li class="feed-tab" id="feed-tab-2">
+             Rising
+            </li>
+          </ul>
+        </div>
+              <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    width: 110%;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                     <!-- post starts here -->
+                     <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+                width: 110%;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                    
+                     <!-- post ends here -->
+
+                     <!-- post starts here -->
+                               <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+                width: 110%;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                     <!-- post ends here -->
+
+                     <!-- post starts here -->
+                               <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+                width: 110%;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                     <!-- post ends here -->
+
+                     <!-- post starts here -->
+                              <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+                width: 110%;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                     
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                              <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+                width: 110%;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                          <div class="post" style="
+                     width: 120%;
+                     ">
+
+                      <div class="question-summary narrow" id="question-summary-42617701rR">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+           
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+" style="
+ width: 110%;
+
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                       <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html"  style="
+ width: 110%;
+
+" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                             <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink"  style="
+ width: 110%;
+
+" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                             <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink"  style="
+ width: 120%;
+
+" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                     <!-- post ends here -->
+    <!-- post starts here -->
+               <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                             <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                             <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post" style="
+                     width: 120%;
+                     ">
+                      <div class="question-summary narrow" id="question-summary-42617701">
+    <div onclick="window.location.href='question.html'" class="cp">
+        <div class="votes">
+            <div class="mini-counts"><span title="0 votes">0</span></div>
+            <div>Votes</div>
+        </div>
+        <div class="status answered">
+            <div class="mini-counts"><span title="1 answer">1</span></div>
+            <div>Responses</div>
+        </div>
+        <div class="views">
+            <div class="mini-counts"><span title="6 views">6</span></div>
+            <div>Clicks</div>
+        </div>
+    </div>
+    <div class="summary">
+        
+        <h3 style="
+        font-weight: 400;
+            margin-bottom: .35em;
+    line-height: 1.3;
+        font-size: 15px;
+            margin: 0;
+    padding: 0;
+    border: 0;
+        "><a href="question.html" class="question-hyperlink" title="Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate
+">Facebook scales back AI flagship after chatbots hit 70% f-AI-lure rate</a></h3>
+        <div class="tags t-immutableûjs t-ordered-map">
+            <a href="/questions/tagged/immutable.js" class="post-tag" title="show questions tagged 'immutable.js'" rel="tag">Facebook</a> <a href="/questions/tagged/ordered-map" class="post-tag" title="show questions tagged 'ordered-map'" rel="tag">Technology</a> 
+        </div>
+        <div class="started">
+            <a href="question.html/?lastactivity" class="started-link">posted <span title="2017-03-06 07:24:42Z" class="relativetime">28 secs ago</span></a>
+            <a href="/users/3507464/albert-oliv%c3%a9">theregister.co.uk</a> 
+        </div>
+    </div>
+</div>
+                 
+          
+        </div>
+                  
+                    
+                     <!-- post ends here -->
+
+                  </div>
+               </div>
+         
+            </div>   <!-- /container -->
+         </div> <!-- /body-content -->
+         <!-- ===============================================
+         BODY CONTENT - END
+         ================================================ -->
+
+
+         <!-- ===============================================
+         FOOTER
+         ================================================ -->
+               <div class="footer">
+                     <div class="container">
+                        <p class="cred pull-left">
+                           <i class="fa fa-copyright"></i> &nbsp;Forhyre 2017
+                        </p>
+                        <ul class="footer-links">
+                           <li><a href="#">Help</a></li>
+                           <li><a href="#">Jobs</a></li>
+                           <li><a href="#">Terms</a></li>
+                           <li><a href="#">Privacy</a></li>
+                           <li><a href="#">About</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Footer ends here -->
+         <!-- ===============================================
+         FOOTER - END
+         ================================================ -->
+
+      </div> <!-- Wrapper End -->
+         
+     
+        
+
+
+              
+            
+
+      <!-- ===============================================
+         SCRIPTS
+         ================================================= -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="statics/js/libs/bootstrap.min.js"></script>
+      <script type="text/javascript" src="statics/js/paper.js"></script>
+      <script type="text/javascript" src="statics/js/customizer.js"></script>
+        <script >
+         var main = function() {
+  $('#post').click(function() {
+   console.log("hello");
+    var post = $('.status-box').val();
+    var e = $('<div class="post"><img src="statics/images/people/1.jpg" class="img-circle" alt="Cinque Terre" width="20" height="20"><span class="user-name">Harsha Vardhan </span><span class="light-grey">Asked a question.</span><span class="post-time">6h ago</span><div class="post-body"><div class="article-title">'+post + '</div></div><div class="feed-item-actions"><ul class="action-buttons"><li class="button" id="button-up">Follow</li><li class="button">Answer</li><li class="button">Share</li></ul></div></div>');
+$('#box').append(e);   
+    $('.status-box').val('');
+     $('.btn').addClass('disabled'); 
+     var modal = document.getElementById('myModal');
+   modal.style.display = "none";
+
+
+  });
+  
+
+  
+ 
+}
+
+$(document).ready(main);
+      </script>
+   </body>
+</html>
+

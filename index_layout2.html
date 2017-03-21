@@ -1,0 +1,699 @@
+<!DOCTYPE HTML>
+<!-- ================================= 
+   App: Paper - Minimal Blog Template
+   Version: 1.0
+   Contact:
+      - http://www.hardikmanktala.com
+      - chat@hardikmanktala.com
+      - Skype: hardik.manktala
+   
+   =================================== -->
+<html lang="en-us">
+   <head>
+      <!-- ===============================================
+         Title and Meta Tags
+         ================================================ -->
+      <meta charset="utf-8">
+         <title>Forhyre</title>
+   
+      <meta property="og:title" content="Q/A Forum - Forhyre" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="forhyre.com" />
+      <meta property="og:image" content="https://media.licdn.com/media/AAEAAQAAAAAAAAdoAAAAJGQwZjcxMzY1LTgwNGItNDEyNy04NzFjLTM0MDY3MWQ5YWEyYw.png" />
+      <meta property="og:description" 
+  content="SAsk questions,update yourself with latest news and polls." />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- ===============================================
+         CSS
+         ================================================ -->
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/bootstrap.min.css">
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/font-awesome.min.css">
+      <link type="text/css" href="statics/styles/css/paper.css" rel="stylesheet">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+       <script src="http://code.highcharts.com/highcharts.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.1.3/ui-bootstrap-tpls.js"></script>
+      <link id="accent-scheme" type="text/css"  href="statics/styles/css/paper-blue.css" rel="stylesheet">
+      <link type="text/css" href="statics/styles/css/customizer.css" rel="stylesheet">
+      <link type="text/css" href="statics/styles/css/responsive.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <style type="text/css">
+         body {
+  background-color: #eeeeee;
+}
+body h2 {
+  text-align: center;
+}
+
+.app-wrapper {
+  margin: 10px 10px;
+  border-radius: 3px;
+  overflow: auto;
+  padding: 0px 5px;
+}
+.app-wrapper .chartWrap {
+  float: left;
+  position: relative;
+  width: 25%;
+  background: white;
+  height: 330px;
+  border: 1px solid silver;
+  margin: 0 4%;
+}
+.app-wrapper .chartWrap #onFeedChart {
+  height: 100%;
+}
+.app-wrapper .chartWrap #photoUploadChart {
+  height: 100%;
+}
+.app-wrapper .chartWrap #vendorChart {
+  height: 100%;
+}
+.app-wrapper .chartWrap .highcharts-container {
+  max-height: 300px;
+}
+
+      </style>
+      <!-- ============================================ -->
+   </head>
+   <body data-spy="scroll" data-target=".nav-primary" data-offset="50">
+
+       <!-- ===============================================
+         CUSTOMIZER
+         ================================================ -->
+
+        
+
+      <!-- ===============================================
+         CUSTOMIZER - END
+         ================================================ -->
+
+
+      <!-- ===============================================
+         NAVBAR
+         ================================================ -->
+      <!-- Navbar Hide Check -->
+
+      <!-- 
+      If title="true" then the top navbar strip (containing the logo) will hide as soon as user scrolls down.
+      If title="false" then the top navbar will remain in place. By default, this is "true" for Layout#1 and "false" for Layout#2
+       -->
+
+      <div class="navbar-check hidden" title="false"></div>
+      <!-- == -->
+          <div class="nav-intro-strip">
+         <div class="container">
+       <div class="nav-logo">
+               <a href="index.html"><img src="statics/images/Forhyre.jpg" height="35" alt="paper symbol">
+                </div>
+         <div class="icons">
+         <i class="glyphicon glyphicon-search"></i>
+         <i class="glyphicon glyphicon-bell"></i>
+         <i class="glyphicon glyphicon-user"></i>
+         
+         </div>
+         </div>
+      </div>
+      <div class="nav-primary">
+         <div class="container">
+            <ul>
+               <li class="active"><a href="index_layout1.html">Q/A's</a></li>
+               <li><a href="news.html">Top News</a></li>
+               <li class="s-child"><a href="single_layout1.html">Polls</a></li>
+               <li class="not-important hidden-xs"><a href="#">Terms</a></li>
+               <li class="not-important hidden-xs"><a href="#">Bookmarks</a></li>
+               <li class="not-important hidden-xs"><a href="#">Dashboard</a></li>
+              
+            </ul>
+         </div>
+      </div>
+               
+
+      <!-- ===============================================
+         NAVBAR - END
+         ================================================ -->
+
+
+      <!-- ===============================================
+         BACK TO TOP
+         ================================================ -->
+      <div class="back-to-top">
+         <i class="fa fa-angle-up"></i>
+      </div>
+      <!-- ===============================================
+         BACK TO TOP - END
+         ================================================ -->
+
+
+      <!-- ===============================================
+         PRELOADER
+         ================================================ -->
+         <div class="preloader">
+            <div class="progress progress-striped active">
+              <div class="progress-bar"></div>
+            </div>
+         </div>
+         <!-- ===============================================
+         PRELOADER - END
+         ================================================ -->
+
+
+      <div id="wrapper">
+
+
+
+      <!-- ===============================================
+         BODY CONTENT
+         ================================================ -->
+         <div id="body-content" class="layout_two_body">
+            <div class="col-md-3 col-sm-5 body-col-right">
+               <div class="panels-wrapper">
+                  <div class="panel panel-sidebar">
+                     <div class="panel-heading">
+                        <p class="head">Post a link</p>
+                        <p class="tag">News links</p>
+                     </div>
+                     <div class="panel-body">
+                        <ul class="post-previews">
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/1.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">Announcing Docker Enterprise Edition (docker.com)</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Posted by John O' Doe</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/2.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">Interview with AMD CEO Dr. Lisa Su (anandtech.com)</a></p>
+                                    <p class="author"><a href="index_layout2.html#"> Posted by Carl J. Doe</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/4.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#"> Facebook brings suicide prevention tools to Live and Messenger (techcrunch.com)</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Posted by Doofus G. Groom</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="panel panel-sidebar">
+                     <div class="panel-body">
+                        <ul class="post-previews">
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/3.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">Why Do Startups Fail? (nytimes.com)</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Posted by Jennifer C. Dolan</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/6.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">Operation Rosehub – patching thousands of open-source projects (googleblog.com).</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Posted By Cerci J. Lannister</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/4.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">The myth of using Scala as a better Java (appliedscala.com)</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Posted by Doofus G. Groom</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="panel panel-sidebar">
+                     <div class="panel-heading">
+                        <p class="head">Fiction</p>
+                        <p class="tag">Who doesn't like to build their own world?</p>
+                     </div>
+                     <div class="panel-body">
+                        <ul class="post-previews">
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/5.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">Gordon Ramsay Fan Fiction</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Michael D. Cook</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+
+                           </li>
+                             <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+                              
+                           </li>
+                           ]  <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+                              
+                           </li>
+                             <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+                              
+                           </li>
+                             <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+                              
+                           </li>
+                             <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+                              
+                           </li>
+                             <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+                              
+                           </li>
+                             <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Pull Off The Perfect Blank Look.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Kristen T. Stewert</a></p>
+                                 </div>
+                              </div>
+                              
+                           </li>
+
+                           <li>
+                              <div class="row">
+                                 <div class="col-xs-2 col-left">
+                                    <a href="index_layout2.html#"><img src="statics/images/people/1.jpg" alt="avatar" class="img-responsive"></a>
+                                 </div>
+                                 <div class="col-xs-10 col-right">
+                                    <p class="title"><a href="index_layout2.html#">How To Get the Perfect Colour Scheme for Your Website.</a></p>
+                                    <p class="author"><a href="index_layout2.html#">Doofus G. Groom</a></p>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- Footer starts here -->
+                    <div class="footer">
+                     <div class="container">
+                        <p class="cred pull-left">
+                           <i class="fa fa-copyright"></i> &nbsp;Forhyre 2017
+                        </p>
+                        <ul class="footer-links">
+                           <li><a href="#">Help</a></li>
+                           <li><a href="#">Jobs</a></li>
+                           <li><a href="#">Terms</a></li>
+                           <li><a href="#">Privacy</a></li>
+                           <li><a href="#">About</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Footer ends here -->
+               <!-- Footer ends here -->
+            </div>
+            <div class="col-md-8 col-sm-7 body-col-left">
+               <div class="posts">
+                  <!-- Cover starts here-->
+                 
+                  <!-- Cover ends here -->
+                  <!-- post starts here -->
+                  <div class="post">
+            <div class="row intro-strip">
+                        <div class="col-xs-2 col-left">
+                           <img src="statics/images/people/2.jpg" alt="author" class="img-responsive">
+                        </div>
+                        <div class="col-xs-10 col-right">
+                           <p class="author"><a href="index_layout2.html#">Cooker B. Brut</a></p>
+                           <p class="when">26th December, 2016</p>
+                        </div>
+                     </div>
+                  <a href="http://hardikmanktala.com/projects/themes/paper/demo/single_layout2.html" class="post-wrapper">
+                        <div class="post-excerpt">
+                           <h3 class="post-title">Will iPhone8 be revolutionary?</h3>
+                           <ul style="
+                      margin-top: 30px;
+                      position: relative;
+                      right: 40px;
+                  ">
+
+                     <button class="btn btn-paper" href="#">iPhone </button>
+                       <button class="btn btn-paper" href="#">Apple </button>
+                         <button class="btn btn-paper" href="#">Technology </button>
+                    
+                     
+                        </div>
+                                    <div id="qp_all1003538" style="width:100%;"><STYLE>#qp_main1003538 .qp_btna:hover input {width:80px}</STYLE><div id="qp_main1003538" fp='B52d45B2-42' results=0 style="margin:0 auto;padding:0px;background-color:rgb(255,255,255);box-sizing:border-box"><form id="qp_form1003538" action="//www.poll-maker.com/results1003538xB52d45B2-42" method="post" target="_blank" style="display:inline;margin:0px;padding:0px"><div style="border-radius:6px;color:rgb(0,0,0)"><input type=hidden name="qp_d1003538" value="42800.9822569413-42800.9822403572"><div style="display:block;font-family:Arial;font-size:12px;color:rgb(0,0,0);padding-top:5px;padding-bottom:5px;clear:both" class="qp_a"><span style="display:block;padding-left:30px;cursor:inherit"><input style="float:left;width:18px;margin-left:-25px;margin-top:-2px;padding:0px;height:18px;-webkit-appearance:radio;" name="qp_v1003538" type="radio" value="1" />Yes</span></div><div style="display:block;font-family:Arial;font-size:12px;color:rgb(0,0,0);padding-top:5px;padding-bottom:5px;clear:both" class="qp_a"><span style="display:block;padding-left:30px;cursor:inherit"><input style="float:left;width:18px;margin-left:-25px;margin-top:-2px;padding:0px;height:18px;-webkit-appearance:radio;" name="qp_v1003538" type="radio" value="2" />No</span></div></div><div style="clear:both;margin:1em auto"><a style="text-decoration:none" class="qp_btna" href="#"><input name="qp_b1003538" style="min-width:7em;padding:0.5em;margin-right:5px;cursor:pointer;cursor:hand" type="submit" btype="v" value="Vote" /></a><a style="text-decoration:none" class="qp_btna" href="#"><input name="qp_b1003538" style="min-width:7em;padding:0.5em;margin-right:5px;cursor:pointer;cursor:hand" type="submit" btype="r" value="Results" /></a></div></form><div style="display:none"><div id="qp_rp1003538" style="font-size:11px;width:5ex;text-align:right;overflow:hidden;position:absolute;right:5px;height:1.5em;line-height:1.5em"></div><div id="qp_rv1003538" style="font-size:11px;width:0%;line-height:1.5em;text-align:right;color:#FFF;box-sizing:border-box;padding-right:3px"></div><div id="qp_rb1003538" style="font-size:12px;color:rgb(255,255,255);display:block;font-size:12px;padding-right:10px 5px"></div><div id="qp_rva1003538" style="background:#006FB9;border-color:#006FB9"></div><div id="qp_rvb1003538" style="background:#163463;border-color:#163463"></div><div id="qp_rvc1003538" style="background:#5BCFFC;border-color:#1481AB"></div></div></div></div>
+                     </a>
+                  
+
+                  </div>
+                        <body ng-app="app">
+   <h2>Highcharts Example</h2>
+   <div class="app-wrapper" ng-controller="ctrl">
+      <div class="chartWrap">
+         <div id="onFeedChart"></div>
+      </div>
+      <div class="chartWrap">
+         <div id="photoUploadChart"></div>
+      </div>
+      <div class="chartWrap">
+         <div id="vendorChart"></div>
+      </div>
+   </div>
+</body>
+<script>
+var app = angular.module('app', ['ui.bootstrap'])
+
+app.controller('ctrl', function($scope, $timeout) {
+
+   // On Feed CHART
+   $(function() {
+      var chart = new Highcharts.Chart({
+         chart: {
+            renderTo: 'onFeedChart',
+            type: 'pie'
+         },
+         title: {
+            text: 'Pie Chart'
+         },
+         plotOptions: {
+            pie: {
+               dataLabels: {
+                  enabled: false             },
+               size: 200,
+               innerSize: '0%',
+               center: ['50%', '40%']
+            }
+         },
+         credits: {                                 
+            enabled:  false                          
+         },
+         series: [{
+            data: [{
+               name: 'Prospects',
+               color: 'rgba(52, 152, 219, 0.5)',
+               y: 20
+            }, {
+               name: 'On Feed',
+               color: 'rgba(52, 152, 219,1.0)',
+               y: 70
+            }]
+         }]
+
+      });
+      // PHOTO CHART
+      var chart = new Highcharts.Chart({
+            chart: {
+               renderTo: 'photoUploadChart',
+               type: 'pie'
+            },
+            title: {
+               text: 'Donut Chart'
+            },
+
+            credits: {                                 
+               enabled:  false                          
+            },
+            plotOptions: {
+               pie: {
+                  dataLabels: {
+                     enabled: false
+                  },
+                  size: 200,
+                  innerSize: '50%',
+                  center: ['50%', '40%']
+               }
+            },
+            series: [{
+               data: [{
+                  name: 'Yes',
+                  color: 'rgba(155, 89, 182,1.0)',
+                  y: 50
+               }, {
+                  name: 'No',
+                  color: 'rgba(155, 89, 182, .5)',
+                  y: 50
+               }]
+            }]
+         },
+         // using 
+
+         function(chart) { // on complete
+
+            var xpos = '50%';
+            var ypos = '50%';
+            var circleradius = 102;
+
+            // Render the circle
+            chart.renderer.circle(xpos, ypos, circleradius).attr({
+               fill: '#ffffff',
+            }).add();
+
+         });
+
+      // Vendor CHART
+      $('#vendorChart').highcharts({
+         chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+         },
+         credits: {                                 
+            enabled:  false                          
+         },
+
+         title: {
+            text: 'Half Donut',
+         },
+         tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+         },
+         plotOptions: {
+            pie: {
+               dataLabels: {
+                  enabled: false
+               },
+               startAngle: -90,
+               endAngle: 90,
+               size: 200,
+               center: ['50%', '60%']
+            }
+         },
+         series: [{
+            type: 'pie',
+            innerSize: '40%',
+            data: [{
+               name: 'Vendor A',
+               color: 'rgba(26, 188, 156,1.0)',
+               y: 40
+            }, {
+               name: 'Vendor B',
+               color: 'rgba(26, 188, 156,0.75)',
+               y: 40
+            }, {
+               name: 'Vendor C',
+               color: 'rgba(26, 188, 156,0.5)',
+               y: 20
+            }]
+         }]
+      });
+
+   });
+});
+</script>
+                  <!-- post ends here -->
+                  <!-- post starts here -->
+                  <div class="post">
+                     <div class="row intro-strip">
+                        <div class="col-xs-2 col-left">
+                           <img src="statics/images/people/2.jpg" alt="author" class="img-responsive">
+                        </div>
+                        <div class="col-xs-10 col-right">
+                           <p class="author"><a href="index_layout2.html#">Cooker B. Brut</a></p>
+                           <p class="when">26th December, 2016</p>
+                        </div>
+                     </div>
+                     <a href="http://hardikmanktala.com/projects/themes/paper/demo/single_layout2.html" class="post-wrapper">
+                        <div class="post-excerpt">
+                           <h3 class="post-title">Holy Moly! The New Clickbait Game</h3>
+                           <p class="short">The title is definitely not clickbait but here's something that will blow your mind...</p>
+                        </div>
+                     </a>
+                     <a href="index_layout2.html#" class="readmore">Read more</a>  
+                     <div class="post-rating row">
+                        <div class="col-xs-6 rating-left">
+                           <i class="fa fa-heart-o heart-post-btn"></i> &nbsp;<span>20</span>
+                        </div>
+                        <div class="col-xs-6 rating-right">
+                           <i class="fa fa-comment-o comment-post-btn"></i>
+                           <span>10 comments</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- post ends here -->
+                  <!-- post starts here -->
+                  <div class="post">
+                     <div class="row intro-strip">
+                        <div class="col-xs-2 col-left">
+                           <img src="statics/images/people/3.jpg" alt="author" class="img-responsive">
+                        </div>
+                        <div class="col-xs-10 col-right">
+                           <p class="author"><a href="index_layout2.html#">Zurb C. Foundation</a></p>
+                           <p class="when">24th December, 2016</p>
+                        </div>
+                     </div>
+                     <a href="http://hardikmanktala.com/projects/themes/paper/demo/single_layout2.html" class="post-wrapper">
+                        <div class="post-img">
+                           <img src="statics/images/stock/4.jpeg" class="img-responsive" alt="post image">
+                        </div>
+                        <div class="post-excerpt">
+                           <h3 class="post-title">Another Web Framework? O.O</h3>
+                           <p class="short">Here's yet another web framework. Enjoy...</p>
+                        </div>
+                     </a>
+                     <a href="index_layout2.html#" class="readmore">Read more</a>  
+                     <div class="post-rating row">
+                        <div class="col-xs-6 rating-left">
+                           <i class="fa fa-heart-o heart-post-btn"></i> &nbsp;<span>20</span>
+                        </div>
+                        <div class="col-xs-6 rating-right">
+                           <i class="fa fa-comment-o comment-post-btn"></i>
+                           <span>10 comments</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- post ends here -->
+                  <!-- post starts here -->
+                  <div class="post">
+                     <div class="row intro-strip">
+                        <div class="col-xs-2 col-left">
+                           <img src="statics/images/people/4.jpg" alt="author" class="img-responsive">
+                        </div>
+                        <div class="col-xs-10 col-right">
+                           <p class="author"><a href="index_layout2.html#">Jenson F. Grey</a></p>
+                           <p class="when">21th December, 2016</p>
+                        </div>
+                     </div>
+                     <a href="http://hardikmanktala.com/projects/themes/paper/demo/single_layout2.html" class="post-wrapper">
+                        <div class="post-img">
+                           <img src="statics/images/stock/2.png" class="img-responsive" alt="post image">
+                        </div>
+                        <div class="post-excerpt">
+                           <h3 class="post-title">Why Trees Are Not Important.</h3>
+                           <p class="short">Let's go chop some trees...</p>
+                        </div>
+                     </a>
+                     <a href="index_layout2.html#" class="readmore">Read more</a>  
+                     <div class="post-rating row">
+                        <div class="col-xs-6 rating-left">
+                           <i class="fa fa-heart-o heart-post-btn"></i> &nbsp;<span>20</span>
+                        </div>
+                        <div class="col-xs-6 rating-right">
+                           <i class="fa fa-comment-o comment-post-btn"></i>
+                           <span>10 comments</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- post ends here -->
+               </div>
+            </div>
+         </div> <!-- /body-content -->
+      </div> <!-- /wrapper -->
+      <!-- ===============================================
+         SCRIPTS
+         ================================================= -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="statics/js/libs/bootstrap.min.js"></script>
+      <script type="text/javascript" src="statics/js/paper.js"></script>
+      <script type="text/javascript" src="statics/js/customizer.js"></script>
+
+   </body>
+</html>

@@ -1,0 +1,141 @@
+
+@media screen and (min-width: 1024px) {
+  #body-content.layout_two_body .body-col-left {
+    width: 100%; } }
+@media screen and (max-width: 1024px) {
+  #body-content.layout_two_body .footer {
+    display: none; }
+
+  .single-content .author-strip .author-tagline {
+    font-size: 1.2em; }
+  .single-content .author-strip .post-meta {
+    font-size: 1.09em; }
+  .single-content .post-content .post-content p {
+    font-size: 1.9em;
+    line-height: 50px; }
+    .single-content .post-content .post-content p.bold {
+      font-size: 2.1em; }
+    .single-content .post-content .post-content p.quote {
+      font-size: 2.2em; }
+
+  .comments .comment-list-wrap .comment-list .comment .comment-content {
+    line-height: 35px; }
+    .comments .comment-list-wrap .comment-list .comment .comment-content p {
+      font-size: 1.35em; }
+  .comments .comment-list-wrap .comment-list .comment .comment-author-strip .comment-author-name a {
+    font-size: 1.35em; }
+
+  #body-content.layout_two_body .panel-sidebar .panel-body .post-previews li img {
+    width: 30px;
+    height: 30px; }
+
+  #body-content .posts .post .post-wrapper p {
+    line-height: 35px;
+    font-size: 1.3em; }
+  #body-content .panel-sidebar .panel-heading .head {
+    font-size: 2em; }
+  #body-content .panel-sidebar .panel-body .post-previews li .title a {
+    font-size: 1.2em; } }
+@media screen and (max-width: 1023px) {
+  .container {
+    width: 100%; } }
+@media screen and (max-width: 20px) {
+  .single-content .author-strip img {
+    width: 10px;
+    height: 10px; }
+
+  #cover-home .tag-holder p {
+    font-size: 2.8em; }
+  #cover-home .tag-holder .btn.btn-paper {
+    width: 70%; }
+
+  #body-content.layout_two_body .body-col-left {
+    position: relative;
+    width: 58.33333333%; }
+    #body-content.layout_two_body .body-col-left .posts {
+      width: 100% !important;
+      margin-left: 0px !important; }
+  #body-content.layout_two_body .body-col-right {
+    position: relative;
+    top: 0; }
+    #body-content.layout_two_body .body-col-right .footer {
+      padding: 0px !important; }
+  #body-content.layout_two_body .single-content, #body-content.layout_two_body .related-posts {
+    width: 100%;
+    margin-left: 0px; } }
+@media screen and (max-width: 500px) {
+  .s-child {
+    margin-right: 0px !important; }
+
+  .single-content .author-strip .author-tagline {
+    font-size: 0.9em; }
+  .single-content .author-strip .post-meta {
+    font-size: 0.9em; }
+  .single-content .post-content .post-content p {
+    font-size: 1.2em;
+    line-height: 40px; }
+    .single-content .post-content .post-content p.bold {
+      font-size: 1.3em; }
+    .single-content .post-content .post-content p.quote {
+      font-size: 1.4em; }
+
+  .comments .comment-list-wrap .comment-list .comment .comment-content {
+    line-height: 30px; }
+    .comments .comment-list-wrap .comment-list .comment .comment-content p {
+      font-size: 1.2em; }
+  .comments .comment-list-wrap .comment-list .comment .comment-author-strip .comment-author-name a {
+    font-size: 1.2em; }
+
+  #cover-home .tag-holder {
+    width: 100%; }
+    #cover-home .tag-holder .btn.btn-paper {
+      width: 80%; }
+
+  .container {
+    padding: 0px; }
+
+  .body-col-left {
+    padding: 0px;
+    width: auto !important; }
+
+  .body-col-right .panels-wrapper {
+    padding-left: 13px;
+    padding-right: 13px; }
+
+  .single-content {
+    padding: 0px; }
+    .single-content .author-strip {
+      padding: 15px; }
+      .single-content .author-strip img {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px; }
+      .single-content .author-strip .author-name a {
+        font-size: 11pt; }
+    .single-content .post-content {
+      padding: 5px; }
+    .single-content .tags {
+      padding: 15px; }
+    .single-content .post-rating-strip {
+      padding: 15px; }
+
+  #body-content.layout_two_body .body-col-left {
+    padding: 0px; }
+    #body-content.layout_two_body .body-col-left .posts {
+      width: 100%;
+      padding: 0px;
+      margin-left: 0px; } }
+@media screen and (max-width: 375px) {
+  #cover-home .tag-holder p {
+    font-size: 2.3em; }
+
+  .nav-primary ul li {
+    margin-right: 10px; }
+
+  #body-content .posts .post .intro-strip .col-left img {
+    width: 10px;
+    height: 10px; }
+  #body-content .posts .post .intro-strip .col-right {
+    text-align: right; } }
+
+/*# sourceMappingURL=responsive.css.map */

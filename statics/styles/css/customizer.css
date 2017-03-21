@@ -1,0 +1,66 @@
+/* Customizer - ONLY FOR DEMO */
+@import url("https://fonts.googleapis.com/css?family=Cherry+Swash|Josefin+Sans|Quicksand");
+.customizer {
+  position: fixed;
+  top: 20%;
+  right: -200px;
+  z-index: 2050;
+  -webkit-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease; }
+  .customizer.expanded {
+    right: 0px; }
+  .customizer .customizer-handle {
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-size: 15pt;
+    color: #52B5BE;
+    background: white;
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 199px;
+    border-right: 0px; }
+  .customizer .customizer-main {
+    display: inline-block;
+    background: white;
+    border: 1px solid #e4e4e4;
+    padding: 16.3px;
+    width: 200px;
+    max-width: 200px; }
+    .customizer .customizer-main .part {
+      padding: 3px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f7f7f7; }
+      .customizer .customizer-main .part img.active {
+        opacity: 0.5;
+        cursor: default; }
+      .customizer .customizer-main .part:last-child {
+        margin-bottom: 0px; }
+      .customizer .customizer-main .part p {
+        color: #363636;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 11pt; }
+      .customizer .customizer-main .part .accent {
+        border-radius: 100%;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+        cursor: pointer; }
+        .customizer .customizer-main .part .accent:last-child {
+          margin-right: 0px; }
+        .customizer .customizer-main .part .accent#red {
+          background-color: #D75252; }
+        .customizer .customizer-main .part .accent#green {
+          background-color: #76BA60; }
+        .customizer .customizer-main .part .accent#pink {
+          background-color: #D78DDC; }
+        .customizer .customizer-main .part .accent#blue {
+          background-color: #52b5be; }
+
+/*# sourceMappingURL=customizer.css.map */

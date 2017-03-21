@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<!-- ================================= 
+   App: Paper - Minimal Blog Template
+   Version: 1.0
+   Contact:
+      - http://www.hardikmanktala.com
+      - chat@hardikmanktala.com
+      - Skype: hardik.manktala
+   
+   =================================== -->
+<html lang="en-us">
+   <head>
+      <!-- ===============================================
+         Title and Meta Tags
+         ================================================ -->
+      <meta charset="utf-8">
+      <title>Ask Forhyre</title>
+          <title>Forhyre</title>
+   
+      <meta property="og:title" content="Q/A Forum - Forhyre - Sample Question,OG Working" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="forhyre.com" />
+      <meta property="og:image" content="https://media.licdn.com/media/AAEAAQAAAAAAAAdoAAAAJGQwZjcxMzY1LTgwNGItNDEyNy04NzFjLTM0MDY3MWQ5YWEyYw.png" />
+      <meta property="og:description" 
+  content="SAsk questions,update yourself with latest news and polls." />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- ===============================================
+         CSS
+         ================================================ -->
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/bootstrap.min.css">
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/font-awesome.min.css">
+      <link type="text/css" href="statics/styles/css/paper.css" rel="stylesheet">
+      <link id="accent-scheme" type="text/css" href="statics/styles/css/paper-blue.css" rel="stylesheet">
+      <link type="text/css" href="statics/styles/css/customizer.css" rel="stylesheet">
+      <link type="text/css" href="statics/styles/css/responsive.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- ============================================ -->
+   </head>
+   <style type="text/css">
+      #question-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+        clear: both;
+    padding: 5px 0;
+    border-bottom: 1px solid #e4e6e8;
+    margin-bottom: 1em;
+    
+}
+.questionh {
+   font-size: 18px;
+}
+.tagl {
+    display: inline-block;
+    letter-spacing: normal;
+  }
+  
+  .taga {
+    display: block;
+    padding: 0.7em 1em;
+    color: #fff;
+    text-decoration: none;
+    background:   #9400D3;
+    &:hover, &:focus {
+      background: darken(#e68a7d, 7%);
+    }
+    .btn.btn-paper {
+    margin-top: 20px;
+    color: white;
+    background: #52b5be;
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
+    width: 20%;
+}
+.ContentFooter {
+    padding-top: 8px;
+    font-size: 13px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.ContentFooter a {
+    color: #aaa;
+}
+
+   </style>
+   <body data-spy="scroll" data-target=".nav-primary" data-offset="50">
+
+       <!-- ===============================================
+         CUSTOMIZER
+         ================================================ -->
+
+      <!-- ===============================================
+         CUSTOMIZER - END
+         ================================================ -->
+
+      <!-- ===============================================
+         NAVBAR
+         ================================================ -->
+      <!-- Navbar Hide Check -->
+
+      <!-- 
+      If title="true" then the top navbar strip (containing the logo) will hide as soon as user scrolls down.
+      If title="false" then the top navbar will remain in place. By default, this is "true" for Layout#1 and "false" for Layout#2
+       -->
+      
+      <div class="navbar-check hidden" title="true"></div>
+      <!-- == -->
+    <div class="nav-intro-strip">
+         <div class="container">
+       
+            <div class="nav-logo">
+               <a href="index.html"><img src="statics/images/Forhyre.jpg" height="35" alt="paper symbol">
+                </div>
+         <div class="icons">
+         <i class="glyphicon glyphicon-search"></i>
+         <i class="glyphicon glyphicon-bell"></i>
+         <i class="glyphicon glyphicon-user"></i>
+         
+         </div>
+         </div>
+      </div>
+      <div class="nav-primary">
+         <div class="container">
+            <ul>
+               <li class="active"><a href="index_layout1.html">Q/A's</a></li>
+               <li><a href="news.html">Top News</a></li>
+               <li class="s-child"><a href="single_layout1.html">Polls</a></li>
+               <li class="not-important hidden-xs"><a href="#">Terms</a></li>
+               <li class="not-important hidden-xs"><a href="#">Bookmarks</a></li>
+               <li class="not-important hidden-xs"><a href="#">Dashboard</a></li>
+              
+            </ul>
+         </div>
+      </div>
+      <!-- ===============================================
+         NAVBAR - END
+         ================================================ -->
+
+
+      <!-- ===============================================
+         BACK TO TOP
+         ================================================ -->
+      <div class="back-to-top">
+         <i class="fa fa-angle-up"></i>
+      </div>
+      <!-- ===============================================
+         BACK TO TOP - END
+         =====================
+
+         =========================== -->
+
+         <!-- ===============================================
+         PRELOADER
+         ================================================ -->
+         <div class="preloader">
+            <div class="progress progress-striped active">
+              <div class="progress-bar"></div>
+            </div>
+         </div>
+         <!-- ===============================================
+         PRELOADER - END
+         ================================================ -->
+
+
+      <div id="wrapper">
+
+
+         <!-- ===============================================
+         SINGLE CONTENT
+         ================================================ -->
+         <div class="single-content">
+            <div class="container">
+
+                 <div id="question-header">
+                <h1 itemprop="name" class="questionh"><a href="/questions/42598253/when-should-a-stdvector-be-used-over-a-stdlist" class="question-hyperlink">When should a std::vector be used over a std::list?</a></h1>
+
+            
+<div class="aside-cta">
+    <a href="/questions/ask" class="btn">Ask Question</a>
+</div>
+      </div>
+
+
+               <div class="post-content">
+
+          
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed fringilla diam. Praesent porta dui quis condimentum volutpat. Vestibulum consectetur lacus a nulla facilisis pulvinar. Nulla in est mollis, euismod purus a, volutpat enim. Nullam ac lectus fringilla, finibus dolor nec, convallis nunc. Nam finibus, ipsum in ultricies varius, massa nunc viverra nibh, sed egestas magna tortor at eros. Nunc auctor lobortis diam sit amet vestibulum. Donec non aliquam sapien.</p>
+
+               </div>
+
+               <div class="tags">
+                  <ul>
+                     <li><a href="single_layout1.html#">Apple</a></li>
+                     <li><a href="single_layout1.html#">Electronics</a></li>
+                     <li><a href="single_layout1.html#">Technology</a></li>
+                     <li><a href="single_layout1.html#">Product</a></li>
+                  </ul>
+                      <ul style="
+                      margin-top: 30px;
+                      position: relative;
+                      right: 0px;
+                  ">
+
+                     <li class="tagl"> <button class="btn btn-paper" href="#">Answer </button></li>
+                     <li class="tagl"> <a class="taga" href="#">Follow</a> </li>
+                     <li class="tagl"> <a class="taga" href="#">Share</a> </li>
+                    <li class="tagl"> <a class="taga" href="#">Downvote</a> </li>
+                  </ul>
+               </div>
+                       
+                     
+               
+           
+            </div>
+         </div>
+
+
+        
+          
+            <!-- comments -->
+            <div class="comments">
+               <div class="container">
+            
+                  <div class="comment-list-wrap">
+                     <div class="comment-list">
+                        <!-- comment starts here -->
+                        <div class="comment">
+                           <div class="row comment-author-strip">
+                              <div class="col-left">
+                                 <a href="single_layout1.html#">
+                                 <img src="statics/images/people/1.jpg" alt="comment author">
+                                 </a>
+                              </div>
+                              <div class="col-right">
+                                 <p class="comment-author-name"><a href="single_layout1.html#">Leo Harsha</a>  <span class="light-grey">
+                Full Stack developer
+              </span></p>
+                                 <p class="comment-date">12th January, 2017</p>
+                              </div>
+                           </div>
+                           <div class="comment-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed fringilla diam. Praesent porta dui quis condimentum volutpat. Vestibulum consectetur lacus a nulla facilisis pulvinar. Nulla in est mollis, euismod purus a, volutpat enim. Nullam ac lectus fringilla, finibus dolor nec, convallis nunc. Nam finibus, ipsum in ultricies varius, massa nunc viverra nibh, sed egestas magna tortor at eros. Nunc auctor lobortis diam sit amet vestibulum. Donec non aliquam sapien.</p>
+                              <div class="ContentFooter AnswerFooter" id="__w2_GY4njTU_content_footer"><span id="PFvXkr"><span class="meta_num">280</span> Views</span><span class="bullet"> · </span><a class="AnswerVoterListModalLink VoterListModalLink" href="/api/mobile_expanded_voter_list?type=answer&amp;key=XlHc41uwiDA" id="__w2_Ur89fpE_modal_link" target="_blank">View Upvotes</a><span id="JVvgtC"></span><span id="GQpKuy"></span></div>
+                           </div>
+                             <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+                        </div>
+                        <!-- comment ends here -->
+                        <!-- comment starts here -->
+                        <div class="comment">
+                           <div class="row comment-author-strip">
+                              <div class="col-left">
+                                 <a href="single_layout1.html#">
+                                 <img src="statics/images/people/2.jpg" alt="comment author">
+                                 </a>
+                              </div>
+                              <div class="col-right">
+                                 <p class="comment-author-name"><a href="single_layout1.html#">Signe Carlson</a></p>
+                                 <p class="comment-date">11th January, 2017</p>
+                              </div>
+                           </div>
+                           <div class="comment-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed fringilla diam. Praesent porta dui quis condimentum volutpat. Vestibulum consectetur lacus a nulla facilisis pulvinar. Nulla in est mollis, euismod purus a, volutpat enim. Nullam ac lectus fringilla, finibus dolor nec, convallis nunc.</p>
+                                 <div class="ContentFooter AnswerFooter" id="__w2_GY4njTU_content_footer"><span id="PFvXkr"><span class="meta_num">280</span> Views</span><span class="bullet"> · </span><a class="AnswerVoterListModalLink VoterListModalLink" href="/api/mobile_expanded_voter_list?type=answer&amp;key=XlHc41uwiDA" id="__w2_Ur89fpE_modal_link" target="_blank">View Upvotes</a><span id="JVvgtC"></span><span id="GQpKuy"></span></div>
+                           </div>
+                              <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+                        </div>
+                        <!-- comment ends here -->
+                     </div>
+                  </div>
+
+               </div>
+               
+            </div>
+            <!-- comments end -->
+ <div class="related-posts">
+            <!-- Footer starts here -->
+         
+              <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="post">
+                        <a href="single_layout1.html#">
+                           <div class="post-img-wrap">
+                              <img src="http://hardikmanktala.com/projects/themes/paper/demo/statics/images/stock/1.jpeg" alt="stock">
+                           </div>
+                           <div class="post-info">
+                              <h1 class="post-title">Are dev interviews hard or am I just incompetent?</h1>
+                           </div>
+                        </a>
+                        <div class="author-info">
+                           <div class="row">
+                              <div class="col-xs-9">
+                                 <a href="single_layout1.html#">
+                                    <div class="row">
+                                       <div class="col-xs-2">
+                                          <img src="statics/images/people/2.jpg" alt="people"> 
+                                       </div>
+                                       <div class="col-xs-10">
+                                          <p class="author-name">Josh D. Class</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-xs-3">
+                                 <div class="rating">
+                                    <i class="fa fa-heart-o heart-post-btn"></i> &nbsp;<span>13</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="post">
+                        <a href="single_layout1.html#">
+                           <div class="post-img-wrap">
+                              <img src="statics/images/stock/2.png" alt="stock">
+                           </div>
+                           <div class="post-info">
+                              <h1 class="post-title"> I want to get hired for an entry level, developer role</h1>
+                           </div>
+                        </a>
+                        <div class="author-info">
+                           <div class="row">
+                              <div class="col-xs-9">
+                                 <a href="single_layout1.html#">
+                                    <div class="row">
+                                       <div class="col-xs-2">
+                                          <img src="statics/images/people/3.jpg" alt="people"> 
+                                       </div>
+                                       <div class="col-xs-10">
+                                          <p class="author-name">Julia</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-xs-3">
+                                 <div class="rating">
+                                    <i class="fa fa-heart-o heart-post-btn"></i> &nbsp;<span>13</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="post">
+                        <a href="single_layout1.html#">
+                           <div class="post-img-wrap">
+                              <img src="statics/images/stock/3.jpeg" alt="stock">
+                           </div>
+                           <div class="post-info">
+                              <h1 class="post-title">Have you created a programming language and why?</h1>
+                           </div>
+                        </a>
+                        <div class="author-info">
+                           <div class="row">
+                              <div class="col-xs-9">
+                                 <a href="single_layout1.html#">
+                                    <div class="row">
+                                       <div class="col-xs-2">
+                                          <img src="statics/images/people/5.jpg" alt="people"> 
+                                       </div>
+                                       <div class="col-xs-10">
+                                          <p class="author-name">Jucky D. Franz</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-xs-3">
+                                 <div class="rating">
+                                    <i class="fa fa-heart-o heart-post-btn"></i> &nbsp;<span>13</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+                 <div class="footer">
+                     <div class="container">
+                        <p class="cred pull-left">
+                           <i class="fa fa-copyright"></i> &nbsp;Forhyre 2017
+                        </p>
+                        <ul class="footer-links">
+                           <li><a href="#">Help</a></li>
+                           <li><a href="#">Jobs</a></li>
+                           <li><a href="#">Terms</a></li>
+                           <li><a href="#">Privacy</a></li>
+                           <li><a href="#">About</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Footer ends here -->
+         </div>
+      </div>
+      <!-- ===============================================
+         SCRIPTS
+         ================================================= -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="statics/js/libs/bootstrap.min.js"></script>
+      <script type="text/javascript" src="statics/js/paper.js"></script>
+      <script type="text/javascript" src="statics/js/customizer.js"></script>
+   </body>
+</html>

@@ -1,0 +1,1565 @@
+<!DOCTYPE HTML>
+
+<html lang="en-us">
+   <head>
+      <!-- ===============================================
+         Title and Meta Tags
+         ================================================ -->
+      <meta charset="utf-8">
+      <title>Forhyre</title>
+   
+      <meta property="og:title" content="Q/A Forum - Forhyre" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="forhyre.com" />
+      <meta property="og:image" content="https://media.licdn.com/media/AAEAAQAAAAAAAAdoAAAAJGQwZjcxMzY1LTgwNGItNDEyNy04NzFjLTM0MDY3MWQ5YWEyYw.png" />
+      <meta property="og:description" 
+  content="SAsk questions,update yourself with latest news and polls." />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- ===============================================
+         CSS
+         ================================================ -->
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/bootstrap.min.css">
+      <link type="text/css" rel="stylesheet" href="statics/styles/css/font-awesome.min.css">
+      <link type="text/css" id="main" href="statics/styles/css/paper.css" rel="stylesheet">
+      <link id="accent-scheme" type="text/css" href="statics/styles/css/paper-blue.css" rel="stylesheet">
+     
+      <link type="text/css" href="statics/styles/css/responsive.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <style type="text/css">
+          li {
+    padding: 10px 0 10px 0;
+  }
+  ul, li {
+    list-style:none;
+    margin:0; padding:0;
+  }
+  
+  
+  
+  input[type="radio"] {
+    margin: 0 10px 0 0;
+  }
+  
+  input[type="submit"] {
+    margin:10px 0 0 0;
+    background-color:#53626E;
+    color:#FFF;
+    border:0;
+    width:20%; height: 30px;
+    font-size:12pt;
+    border-radius:4px;
+  }
+     </style>
+      <!-- ============================================ -->
+   </head>
+   <body data-spy="scroll" data-target=".nav-primary" data-offset="50">
+
+      <!-- ===============================================
+         CUSTOMIZER
+         ================================================ -->
+
+         <div class="customizer">
+
+          
+
+            <div class="customizer-handle">
+
+               <i class="fa fa-cog fa-spin"></i>
+
+            </div>
+
+         </div>
+
+      <!-- ===============================================
+         CUSTOMIZER - END
+         ================================================ -->
+
+
+      <!-- ===============================================
+         NAVBAR
+         ================================================ -->
+      <!-- Navbar Hide Check -->
+
+      <!-- 
+      If title="true" then the top navbar strip (containing the logo) will hide as soon as user scrolls down.
+      If title="false" then the top navbar will remain in place. By default, this is "true" for Layout#1 and "false" for Layout#2
+       -->
+
+      <div class="navbar-check hidden" title="true"></div>
+      <!-- == -->
+      <div class="nav-intro-strip">
+         <div class="container">
+       
+            <div class="nav-logo">
+               <a href="index.html"><img src="statics/images/Forhyre.jpg" height="35" alt="paper symbol">
+                </div>
+         <div class="icons">
+         <i class="glyphicon glyphicon-search"></i>
+         <i class="glyphicon glyphicon-bell"></i>
+         <i class="glyphicon glyphicon-user"></i>
+         
+         </div>
+         </div>
+      </div>
+      <div class="nav-primary">
+         <div class="container">
+            <ul>
+               <li class="active"><a href="index_layout1.html">Q/A's</a></li>
+               <li><a href="news.html">Top News</a></li>
+               <li class="s-child"><a href="single_layout1.html">Polls</a></li>
+               <li class="not-important hidden-xs"><a href="#">Terms</a></li>
+               <li class="not-important hidden-xs"><a href="#">Bookmarks</a></li>
+               <li class="not-important hidden-xs"><a href="#">Dashboard</a></li>
+              
+            </ul>
+         </div>
+      </div>
+      <!-- ===============================================
+         NAVBAR - END
+         ================================================ -->
+
+      <!-- ===============================================
+         BACK TO TOP 
+         ================================================ -->
+      <div class="back-to-top">
+         <i class="fa fa-angle-up"></i>
+      </div>
+     <!-- ===============================================
+         BACK TO TOP - END
+         ================================================ -->
+
+
+         <!-- ===============================================
+         PRELOADER
+         ================================================ -->
+         <div class="preloader">
+            <div class="progress progress-striped active">
+              <div class="progress-bar"></div>
+            </div>
+         </div>
+         <!-- ===============================================
+         PRELOADER - END
+         ================================================ -->
+
+      <div id="wrapper">
+         
+
+
+         <!-- ===============================================
+         COVER
+         ================================================ -->
+         <div id="cover-home">
+            <div class="container">
+               <div class="tag-holder">
+                  <p>You are very important.<br>Your opinion actually matters</p>
+                  <a id="question" class="btn btn-paper">Ask Question</a>
+               </div>
+            </div>
+         </div>
+         <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Leo Harsha
+              </span>
+              <span class="light-grey">
+                asks
+              </span>
+                <form>
+        <div class="form-group">
+          <textarea class="form-control status-box" rows="2" placeholder="What's your question?"></textarea>
+        </div>
+      </form>
+            <div class="button-group pull-right">
+        <a href="#" class="btn btn-default">Cancel </a>
+        <a href="#" id="post" class="btn btn-primary">Post</a>
+      </div>  
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("question");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+         <!-- ===============================================
+         COVER - END
+         ================================================ -->
+
+
+         <!-- ===============================================
+         BODY CONTENT
+         ================================================ -->
+         <div id="body-content">
+            <div class="container">
+               <div class="col-md-8 col-sm-7 body-col-left">
+                  <div class="posts">
+                   <div class="feed-switcher">
+          <ul class="list-contents">
+            <li class="feed-tab" id="feed-tab-1">
+              Top Stories
+            </li>
+            <li class="feed-tab" id="feed-tab-2">
+              Most Recent
+            </li>
+          </ul>
+        </div>
+        <div class="new-question" id="new-question">
+
+                 <div class="post">
+                       
+             
+           <img src="statics/images/people/1.jpg" class="img-circle" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+               Harsha Vardhan
+              </span>
+              <span class="light-grey">
+                Asked a question.
+              </span>
+              <span class="post-time">
+                 6h ago
+              </span>
+            
+         
+             <div class="post-body">
+              <div class="article-title">
+              <a href="question.html">Riotry: Who was involved in building the first version of Riotry?</a>
+                
+                </div>
+              </div>
+                 
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up">Follow</li>
+                    <li class="button">Answer</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+              
+                     </div>
+              </div> 
+                     <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like?</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                My case is probably not quite what you're looking for,
+                <br/>
+                <br/>
+                  but I'll describe it anyway. I develop models for automated EEG analysis. The models are all in a standalone program that neurologists use. Their computers may or may not be connected to the internet, so all computation has to be local.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+
+                     <!-- post starts here -->
+                     <div class="post">
+                <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+              <a href="question.html">What does your production machine learning pipeline look like?</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+               (ML engineer from Dropbox here)
+                <br/>
+                <br/>
+                  
+For deep learning oriented projects, we train on EC2 GPU instances, generally p2.xlarge instances these days to get the Nvidia K80 GPUs. We can spin up many of these in parallel if we are doing model architecture searches or hyperparameter exploration.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+
+                      </div>
+                     <!-- post ends here -->
+
+                     <!-- post starts here -->
+                     <div class="post">
+                       
+             
+           <img src="statics/images/people/1.jpg" class="img-circle" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+               Harsha Vardhan
+              </span>
+              <span class="light-grey">
+                Asked a question.
+              </span>
+              <span class="post-time">
+                 6h ago
+              </span>
+            
+         
+             <div class="post-body">
+              <div class="article-title">
+                <a href="question.html">Riotry: Who was involved in building the first version of Riotry?</a>
+              </div>
+              </div>          
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up">Follow</li>
+                    <li class="button">Answer</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+              
+                     </div>
+                     <!-- post ends here -->
+
+                     <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                Conversational ML Pipeline (Myra Labs).
+                <br/>
+                <br/>
+                  
+
+We have a few interesting challenges. Our system is set up to create models for a variety of customers, and thus needs to be able to build, update and serve a couple of thousand models at any given time. Since we need GPUs, this has required some custom work rather than being able to piggy back on existing frameworks. We leverage Tensorflow for most things.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+               Conversational ML Pipeline (Myra Labs).
+
+                <br/>
+                <br/>
+                 
+We have a few interesting challenges. Our system is set up to create models for a variety of customers, and thus needs to be able to build, update and serve a couple of thousand models at any given time. Since we need GPUs, this has required some custom work rather than being able to piggy back on existing frameworks. We leverage Tensorflow for most things.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up this poll.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+           <div class="article-title">
+               <a href="question.html" style="
+    margin-left: 35px;
+    margin-top: 5px;
+">Is sony is sinking company?</a>
+              </div>
+                   <div class="poll" style="margin-top: 20px">
+                      <ul>
+    <li><input name="poll_value" type="radio" value="option 1" required />Yes</li>
+    <li><input name="poll_value" type="radio" value="option 1" />No</li>
+    </ul>
+  <input type="submit" value="Submit" id="submit" onclick="switchVisible()" /> 
+  </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                Conversational ML Pipeline (Myra Labs).
+
+                <br/>
+                <br/>
+                   We have a distributed job processor cluster running on GPU nodes. All models are trained on this. We wrote a custom framework in Python for this. It can train any kind of model (keras - tf/theano, sklearn, et al).
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+              <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                Well,
+                <br/>
+                <br/>
+                   We have a distributed job processor cluster running on GPU nodes. All models are trained on this. We wrote a custom framework in Python for this. It can train any kind of model (keras - tf/theano, sklearn, et al).
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+              <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                I work at Spotify on ML. I spent quite sometime working on our production vector model pipelines.
+                <br/>
+                <br/>
+                  1. Training data: Scalding pipelines (could be any large scale production framework) to preprocess training data and reduce it to a few hundred gigs.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+               DATA
+                <br/>
+                <br/>
+                  1. Training data: Scalding pipelines (could be any large scale production framework) to preprocess training data and reduce it to a few hundred gigs.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                Facebook!
+                <br/>
+                <br/>
+                  Production deployment of models. Essentially glue code that ensures that models are versioned, atomic (user, music vectors are all from the same batch) and deployed into music recommendation and realtime frameworks.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                At Custora (YC W11), analyzing consumer behavior and presenting the insights through a web-based interface.
+                <br/>
+                <br/>
+                  We have an in-house system for modeling DAGs of statistics, perhaps like Airflow (I've only read about Airflow, never used it, so can't comment more there). Computed values at different nodes in the DAG can be cached by their arguments. So for example, a fitted model would be a very logical node to cache, as you'll have many other potential statistical requests that would depend on the model.
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                Fraud detection at GoCardless (YC 11). We use the same tech for training and production classification: logistic regression (sklearn).
+                <br/>
+                <br/>
+                 Fraud detection at GoCardless (YC 11). We use the same tech for training and production classification: logistic regression (sklearn).
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+    <!-- post starts here -->
+                     <div class="post">
+                      
+                  <img src="statics/images/people/1.jpg" class="img-rounded" alt="Cinque Terre" width="20" height="20">
+                    
+                         <span class="user-name">
+                Raj raghavan
+              </span>
+              <span class="light-grey">
+                voted up your post.
+              </span>
+              <span class="post-time">
+                2m ago
+              </span>
+          
+            
+            
+
+                    
+     
+            <div class="post-body">
+              <div class="article-title">
+               <a href="question.html">What does your production machine learning pipeline look like??</a>
+              </div>
+
+               <div class="row intro-strip">
+               <div class="left">
+                <div class="col-xs-2">
+                <img src="statics/images/people/3.jpg" class="img-circle" alt="Cinque Terre" width="15" height="15">
+                </div>
+                         
+                           <div class="col-xs-10 col-right">
+
+                              <p class="author"><a href="index_layout1.html#">Jagan Mohan</a></p>
+                              <p class="when">Developer</p>
+                           </div>
+                        </div>
+                        </div>
+              <div class="article-preview">
+                Fuck yeah!
+                <br/>
+                <br/>
+                  kuch bhi kuch bhi kuch bhi kuch bhi kuch bhi kuch bhi kuch bhi kuch bhi kuch bhi
+                  <a href="/" class="more-link">
+                    (more)
+                  </a>
+              </div>
+            </div>
+                <div class="feed-item-actions">
+                  <ul class="action-buttons">
+                    <li class="button" id="button-up"><img src="http://www.iconsdb.com/icons/download/royal-blue/triangle-512.png"/> Upvote</li>
+                    <li class="button">Comment</li>
+                    <li class="button">Share</li>
+                  </ul>
+                </div>
+          
+        </div>
+                    
+                     <!-- post ends here -->
+
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-5 body-col-right">
+                  <div class="panels-wrapper">
+                     <div class="panel panel-sidebar">
+                        <div class="panel-heading">
+                           <p class="head">Trending</p>
+                          
+                        </div>
+                        <div class="panel-body">
+                           <ul class="post-previews">
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/1.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">iPhone</a></p>
+                                       <p class="author"><a href="index_layout1.html#">1M people are talking about this</a></p>
+                                   </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/2.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">Spotify</a></p>
+                                       <p class="author"><a href="index_layout1.html#">500K people are talking about this</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/4.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">Nokia 3310</a></p>
+                                       <p class="author"><a href="index_layout1.html#">80K people are talking about this</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul> <!-- /post-previews -->
+                        </div>
+                     </div>
+                     <div class="panel panel-sidebar">
+                        <div class="panel-heading">
+                           <p class="head">Top questions</p>
+                           <p class="tag">Questions which are rising today</p>
+                        </div>
+                        <div class="panel-body">
+                           <ul class="post-previews">
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/3.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">What are the best new products or inventions that most people don't know about?</a></p>
+                                       <p class="author"><a href="index_layout1.html#">Nicholas Hall</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/6.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">What is the best career advice for a software developer to earn a higher salary?</a></p>
+                                       <p class="author"><a href="index_layout1.html#">Cerci J. Lannister</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/4.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">What unpopular opinions do you have about software development?</a></p>
+                                       <p class="author"><a href="index_layout1.html#">Doofus G. Groom</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul> <!-- /post-previews -->
+                        </div>
+                     </div>
+                     <div class="panel panel-sidebar">
+                        <div class="panel-heading">
+                           <p class="head">Categories</p>
+                           <p class="tag">Search by tags</p>
+                        </div>
+                        <div class="panel-body">
+                        <style type="text/css">
+                           #LI_1 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    height: 327px;
+    width: 214.328px;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 107.156px 163.5px;
+    transform-origin: 107.156px 163.5px;
+    border: 0px none rgb(111, 125, 149);
+    font: normal normal normal normal 13px / 18.5714px Lato;
+    list-style: none outside none;
+    margin: 35px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 15px;
+}/*#LI_1*/
+
+#H3_2 {
+    box-sizing: border-box;
+    color: rgb(44, 62, 80);
+    height: 26px;
+    text-align: left;
+    width: 184.328px;
+    column-rule-color: rgb(44, 62, 80);
+    perspective-origin: 92.1562px 13px;
+    transform-origin: 92.1562px 13px;
+    border-top: 0px none rgb(44, 62, 80);
+    border-right: 0px none rgb(44, 62, 80);
+    border-bottom: 1px solid rgb(218, 223, 234);
+    border-left: 0px none rgb(44, 62, 80);
+    font: normal normal bold normal 14px / 15.4px Lato;
+    list-style: none outside none;
+    margin: 20px 0px 15px;
+    outline: rgb(44, 62, 80) none 0px;
+    padding: 0px 0px 10px;
+}/*#H3_2*/
+
+#UL_3 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    height: 211px;
+    text-align: left;
+    width: 184.328px;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 92.1562px 105.5px;
+    transform-origin: 92.1562px 105.5px;
+    border: 0px none rgb(111, 125, 149);
+    font: normal normal normal normal 13px / 18.5714px Lato;
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px;
+}/*#UL_3*/
+
+#LI_4, #LI_6, #LI_8, #LI_10, #LI_12, #LI_14, #LI_16, #LI_18 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: block;
+    height: 22px;
+    width: 184.328px;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 92.1562px 11px;
+    transform-origin: 92.1562px 11px;
+    border: 0px none rgb(111, 125, 149);
+    font: normal normal normal normal 13px / 18.5714px Lato;
+    list-style: none outside none;
+    margin: 0px 0px 5px;
+    outline: rgb(111, 125, 149) none 0px;
+}/*#LI_4, #LI_6, #LI_8, #LI_10, #LI_12, #LI_14, #LI_16, #LI_18*/
+
+#A_5 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 74.5469px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 37.2656px 11px;
+    transform-origin: 37.2656px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_5*/
+
+#A_7 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 90.1406px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 45.0625px 11px;
+    transform-origin: 45.0625px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_7*/
+
+#A_9 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 84.2344px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 42.1094px 11px;
+    transform-origin: 42.1094px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_9*/
+
+#A_11 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 62.7969px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 31.3906px 11px;
+    transform-origin: 31.3906px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_11*/
+
+#A_13 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 50.6406px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 25.3125px 11px;
+    transform-origin: 25.3125px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_13*/
+
+#A_15 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 83.3906px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 41.6875px 11px;
+    transform-origin: 41.6875px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_15*/
+
+#A_17 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 59.1875px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 29.5938px 11px;
+    transform-origin: 29.5938px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_17*/
+
+#A_19 {
+    box-sizing: border-box;
+    color: rgb(111, 125, 149);
+    display: inline-block;
+    height: 22px;
+    text-align: left;
+    text-decoration: none;
+    width: 52px;
+    word-break: break-word;
+    column-rule-color: rgb(111, 125, 149);
+    perspective-origin: 26px 11px;
+    transform-origin: 26px 11px;
+    background: rgb(243, 245, 249) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(217, 223, 233);
+    border-radius: 10px 10px 10px 10px;
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(111, 125, 149) none 0px;
+    padding: 0px 10px;
+}/*#A_19*/
+
+#A_20 {
+    box-sizing: border-box;
+    color: rgb(21, 163, 249);
+    text-align: left;
+    text-decoration: none;
+    word-break: break-word;
+    column-rule-color: rgb(21, 163, 249);
+    border: 0px none rgb(21, 163, 249);
+    font: normal normal normal normal 14px / 20px Lato;
+    list-style: none outside none;
+    outline: rgb(21, 163, 249) none 0px;
+}/*#A_20*/
+
+
+                        </style>
+
+                        
+   <ul id="UL_3">
+      <li id="LI_4">
+          <a href="#" id="A_5">business</a> x 6
+      </li>
+      <li id="LI_6">
+          <a href="#" id="A_7">technology</a> x 5
+      </li>
+      <li id="LI_8">
+          <a href="#" id="A_9">marketing</a> x 5
+      </li>
+      <li id="LI_10">
+          <a href="#" id="A_11">google</a> x 4
+      </li>
+      <li id="LI_12">
+          <a href="#" id="A_13">apps</a> x 4
+      </li>
+      <li id="LI_14">
+          <a href="#" id="A_15">billionaire</a> x 3
+      </li>
+      <li id="LI_16">
+          <a href="#" id="A_17">movie</a> x 2
+      </li>
+      <li id="LI_18">
+          <a href="#" id="A_19">glass</a> x 2
+      </li>
+   </ul> <a href="#" id="A_20">See more tags</a>
+
+                        </div>
+                     </div>
+
+                     <div class="panel panel-sidebar">
+                        <div class="panel-heading">
+                           <p class="head">Top users</p>
+                           <p class="tag">Answer the questions and get popular</p>
+                        </div>
+                        <div class="panel-body">
+                           <ul class="post-previews">
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/5.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">Michael D. Cook</a></p>
+                                       <p class="author"><a href="index_layout1.html#">Points: 100K</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/7.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">Kristen T. Stewert</a></p>
+                                       <p class="author"><a href="index_layout1.html#">Points: 90K</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="row">
+                                    <div class="col-xs-2 col-left">
+                                       <a href="index_layout1.html#"><img src="statics/images/people/1.jpg" alt="avatar" class="img-responsive"></a>
+                                    </div>
+                                    <div class="col-xs-10 col-right">
+                                       <p class="title"><a href="index_layout1.html#">Dennis Richie </a></p>
+                                       <p class="author"><a href="index_layout1.html#">Points: 8   0K</a></p>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul> <!-- /post-previews -->
+
+                        </div>   <!-- /panel-body -->
+                     </div> <!-- /panel-sidebar -->
+                  </div> <!-- /panels-wrapper -->
+               </div> <!-- /body-col-right -->
+            </div>   <!-- /container -->
+         </div> <!-- /body-content -->
+         <!-- ===============================================
+         BODY CONTENT - END
+         ================================================ -->
+
+
+         <!-- ===============================================
+         FOOTER
+         ================================================ -->
+          <div class="footer">
+                     <div class="container">
+                        <p class="cred pull-left">
+                           <i class="fa fa-copyright"></i> &nbsp;Forhyre 2017
+                        </p>
+                        <ul class="footer-links">
+                           <li><a href="#">Help</a></li>
+                           <li><a href="#">Jobs</a></li>
+                           <li><a href="#">Terms</a></li>
+                           <li><a href="#">Privacy</a></li>
+                           <li><a href="#">About</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Footer ends here -->
+         <!-- ===============================================
+         FOOTER - END
+         ================================================ -->
+
+      </div> <!-- Wrapper End -->
+         
+     
+        
+
+
+              
+            
+
+      <!-- ===============================================
+         SCRIPTS
+         ================================================= -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="statics/js/libs/bootstrap.min.js"></script>
+      <script type="text/javascript" src="statics/js/paper.js"></script>
+     
+        <script >
+         var main = function() {
+  $('#post').click(function() {
+   console.log("hello");
+    var post = $('.status-box').val();
+    var e = $('<div class="post"><img src="statics/images/people/1.jpg" class="img-circle" alt="Cinque Terre" width="20" height="20"><span class="user-name">Harsha Vardhan </span><span class="light-grey">Asked a question.</span><span class="post-time">6h ago</span><div class="post-body"><div class="article-title">'+post + '</div></div><div class="feed-item-actions"><ul class="action-buttons"><li class="button" id="button-up">Follow</li><li class="button">Answer</li><li class="button">Share</li></ul></div></div>');
+$('#box').append(e);   
+    $('.status-box').val('');
+     $('.btn').addClass('disabled'); 
+     var modal = document.getElementById('myModal');
+   modal.style.display = "none";
+
+
+  });
+  
+
+  
+ 
+}
+
+$(document).ready(main);
+      </script>
+   </body>
+</html>
+
